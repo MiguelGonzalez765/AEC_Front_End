@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "app-voyages-EricMartins": {
+    "app-voyages-Miguel-Gonzalez": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/app-voyages-EricMartins",
+            "outputPath": "dist/app-voyages-Miguel-Gonzalez",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "app-voyages-EricMartins:build"
+            "browserTarget": "app-voyages-Miguel-Gonzalez:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "app-voyages-EricMartins:build:production"
+              "browserTarget": "app-voyages-Miguel-Gonzalez:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "app-voyages-EricMartins:build"
+            "browserTarget": "app-voyages-Miguel-Gonzalez:build"
           }
         },
         "test": {
@@ -112,16 +112,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "app-voyages-EricMartins:serve"
+            "devServerTarget": "app-voyages-Miguel-Gonzalez:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "app-voyages-EricMartins:serve:production"
+              "devServerTarget": "app-voyages-Miguel-Gonzalez:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "app-voyages-EricMartins"
+  "defaultProject": "app-voyages-Miguel-Gonzalez"
 }
