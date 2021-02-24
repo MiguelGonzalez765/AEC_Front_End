@@ -1,0 +1,40 @@
+<div class="cadre">
+
+    <div  class="complet">
+        <!-- affichage de image ,  adresse, destination et avec ngfor on affiche les caracteristiques  -->
+        <div class="img-hotel">
+            <img  class="imge" src={{forfait.hotel.image}} alt= "">
+            <div class="separateur">
+                <div class="d" >{{forfait.destination}}</div>
+                <div class="nom-hotel"> {{forfait.hotel.nom}}</div>
+
+                <div>
+                    <div *ngFor="let item of forfait.hotel.caracteristiques">
+                        <div> {{item}} </div> 
+                    </div>
+                </div>        
+          
+                <div id="aderess">{{forfait.hotel.coordonnees}}</div>
+            </div>
+        </div>
+        <!-- le prix et si , la durè et les forfaits qu'on de rabais -->
+        <div id="prix">
+            <p style="font-size: 24px; color: white;">10 jours</p>
+            <div *ngIf="forfait.rabais>0; else elseBlock" style="font-size: 17px; color: aquamarine;">
+                <p>{{forfait.prix}}$</p>
+                <p style="font-size: 22px;"> Rabais de  {{forfait.rabais}}$</p>
+                <p class="parp text">{{forfait.prix-forfait.rabais}}$</p>
+                
+            </div>
+            <p style="font-size: 20px; margin-left: 85px; color: rgb(110, 9, 9);">Date de depart:  {{forfait.dateDepart}}, 10 jours</p>
+            <ng-template #elseBlock><p>{{forfait.prix}}$</p></ng-template>
+
+            <div>taxes et frais inclus</div>
+        
+        </div>
+    </div>
+
+
+
+
+</div>

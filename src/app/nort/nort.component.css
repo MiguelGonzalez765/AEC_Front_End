@@ -1,0 +1,22 @@
+table {
+    width: 100%;
+ }
+
+ #heroFormAjout { padding-left:24px; padding-right: 24px; }
+
+ .input-full-width { width:100% }
+ 
+ table { width: 100%; }
+ 
+ .mat-column-nom { width:100%; }
+ .mat-column-actions { min-width:90px !important; }
+ 
+ .boutonsAction { padding:0}
+ .boutonsAction form { display: inline-block; }
+ form{
+    border: solid 2px;
+    text-align: center;
+    background-color: rgb(241, 239, 228);
+ }
+ 
+ 

@@ -1,0 +1,35 @@
+
+<mat-drawer-container class="example-container" autosize> 
+    
+    
+            <mat-drawer #drawer class="example-sidenav" mode="side"> 
+                <div class="container-formulaire">
+                    <app-formulaire-forfait  ></app-formulaire-forfait  >
+                    </div>
+            </mat-drawer>
+    <div class="example-sidenav-content">
+        <mat-grid-list cols="1" rowHeight="180px"  >
+            
+            
+                
+                <mat-grid-list cols="3" rowHeight="fit" style="height: 250px">
+                    <span *ngFor="let item of mesForfaits">
+                        <mat-grid-tile   *ngIf="item.vedette">
+                                <app-mini-forfait  [forfait]="item" style="height: 100%;width: 100%;" ></app-mini-forfait >
+                        </mat-grid-tile>
+                    </span>
+                </mat-grid-list>
+   
+            </mat-grid-list>
+            <button class="bt" type="button" mat-button (click)="drawer.toggle()"> 
+                Rechercher forfait
+              </button>
+        </div>
+        <mat-grid-list cols="1" rowHeight="480px" rowHeight="480px"  style="margin-top: 40px;">
+            <mat-grid-tile *ngFor="let item of mesForfaits">
+                <app-forfait-complet  [forfait]="item" style="width: 100%;" ></app-forfait-complet >
+            </mat-grid-tile>
+        </mat-grid-list>
+</mat-drawer-container>
+
+

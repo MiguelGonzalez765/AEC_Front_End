@@ -1,0 +1,11 @@
+<h1 style="text-align: center; font-size: 25px; color: white">Forfaits Costa Rica</h1>
+<mat-list>
+    <span *ngFor="let item of listForfaits">
+        <ng-template [ngIf]="contains(item.destination,'Costa Rica')">
+            <mat-list-item  style="height: auto; padding-bottom: 10px;padding-top: 10px;">  
+                <app-forfait-complet  [forfait]="item" style="width: 100%;" ></app-forfait-complet > 
+            </mat-list-item>
+            <mat-divider></mat-divider>
+        </ng-template>
+    </span>
+</mat-list>

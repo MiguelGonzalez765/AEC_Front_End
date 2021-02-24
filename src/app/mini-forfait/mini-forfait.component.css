@@ -1,0 +1,52 @@
+.card{
+    background-color: rgb(17, 173, 224); 
+    border: 2px solid black;
+    margin: 5px;
+    padding: 9px
+}
+
+   
+.momHotel{
+    color: rgb(69, 69, 238);
+    text-align: center;  
+    font-size: 1.8em;
+}
+
+
+.text {
+    font-size:28px;
+    font-family:helvetica;
+    font-weight:bold;
+    color:#d90b0b;
+    text-transform:uppercase;
+  }
+  .parp {
+    
+    animation-name: parpa;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    -webkit-animation-name:parpa;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  }
+  
+  @-moz-keyframes parpa{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+  
+  @-webkit-keyframes parpa {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+  }
+  
+  @keyframes parpa {  
+    0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }

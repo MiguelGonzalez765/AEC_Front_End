@@ -1,0 +1,27 @@
+
+
+<mat-card class="card" >
+    <mat-card-header style="display: flex; justify-content: space-between;" >
+        <mat-card-title ></mat-card-title>
+        <!--  ville de depart -->
+        <h3 style="font-size: 14px;">{{forfait.destination}}, De {{forfait.villeDepart}}</h3>
+      <div>
+       <mat-card-subtitle>Vedette</mat-card-subtitle>
+      </div>
+    </mat-card-header>
+    <mat-card-content style="color: black; font-size: 20px; margin-left: 15px;">{{forfait.hotel.nom}}</mat-card-content>
+    <mat-card-actions style="color: rgb(184, 11, 106);">
+<!-- rabais   -->
+        <div *ngIf="forfait.rabais>0; else elseBlock" style="display:flex; font-size: 17px;">
+            <p  style="margin-left: 20px; ;">{{forfait.prix}}$</p>
+            <p style="margin-left: 20px;">Rabais {{forfait.rabais}}$</p>
+            <p class="parp text" style="margin-left: 20px;">{{forfait.prix-forfait.rabais}}$</p>
+        </div>
+        <ng-template #elseBlock><p>{{forfait.prix}}$</p></ng-template>
+    </mat-card-actions>
+    <!-- hotel  -->
+    <mat-card-footer style="display: flex; margin-left: 15px; margin-right: 15;">
+                <app-etoile *ngFor="let item of [].constructor(forfait.hotel.nombreEtoiles)"></app-etoile>
+            <p style="margin-left: 85px;">{{forfait.dateDepart}}, 10 jours</p>
+    </mat-card-footer>
+  </mat-card>

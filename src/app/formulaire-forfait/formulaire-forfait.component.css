@@ -1,0 +1,63 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+ 
+
+.ec-stars-wrapper:hover a {
+	color: rgb(39, 130, 228);
+}
+
+.ec-stars-wrapper > a:hover ~ a {
+	color: #888;
+}
+label{ color:grey;}
+input[type = "radio"]{ display:none;}
+.clasificacion{
+	direction: rtl;
+	unicode-bidi: bidi-override;
+}
+
+label:hover{color:orange;}
+label:hover ~ label{color:orange;}
+input[type = "radio"]:checked ~ label{color:orange;}
+#form {
+	width: 250px;
+	margin: 0 auto;
+	height: 50px;
+  }
+  
+  #form p {
+	text-align: center;
+  }
+  
+  #form label {
+	font-size: 20px;
+  }
+  
+  input[type="radio"] {
+	display: none;
+  }
+  
+  label {
+	color: grey;
+  }
+  
+  .clasificacion {
+	direction: rtl;
+	unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+	color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+	color: orange;
+  }
